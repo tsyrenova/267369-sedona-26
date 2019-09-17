@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт города Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -76,7 +79,7 @@
        <h2 class="visual-hidden">Поиск гостиницы</h2>
        <p class="search-hotel__quetion">Заинтересовались?</p>
        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-       <button class="search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
+       <button class="search-hotel__popup-form-button search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
        <form class="search-hotel__popup-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="search-hotel__popup-form-field" for="arrival-date">
           <span class="search-hotel__popup-form-field-name">Дата заезда:</span>
@@ -84,7 +87,7 @@
         </label>
         <label class="search-hotel__popup-form-field" for="departure-date">
           <span class="search-hotel__popup-form-field-name">Дата выезда:</span>
-          <input type="text" name="departure-date" value="" placeholder="4 июля 2017">
+          <input class="search-hotel-input" type="text" name="departure-date" value="" placeholder="4 июля 2017">
         </label>
         <label class="search-hotel__popup-form-field" for="adults">
           <span class="search-hotel__popup-form-field-name">Взрослые:</span>
@@ -94,7 +97,7 @@
           <span class="search-hotel__popup-form-field-name">Дети:</span>
           <input class="search-hotel-input" type="text" name="children" value="" placeholder="0">
         </label>
-        <button class="search-hotel__popup-form-button-search" type="submit">Найти</button>
+        <button class="search-hotel__popup-form-button search-hotel__popup-form-button-search" type="submit">Найти</button>
       </form>
 
        </form>
@@ -124,7 +127,7 @@
      </ul>
      <p class="footer__made">Website by</p>
      <a class="footer__made-link" href="https://htmlacademy.ru">
-       <img class="footer__made-image" src="/img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+       <img class="footer__made-image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
      </a>
    </footer>
 
