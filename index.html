@@ -33,11 +33,11 @@
        <h2 class="visual-hidden">Преимущества</h2>
        <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
        <ul class="features__list">
-         <li class="features__item feature-item">
+         <li class="features__item feature-item-white">
            <h3 class="feature-item__title">Настоящий городок</h3>
            <p class="feature-item__number">№ 1</p>
            <p class="feature-item__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-           <ul class="services">
+           <ul class="features_services">
             <li class="services__item">
              <h4 class="services__title">Жильё</h4>
              <p class="services__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -52,7 +52,7 @@
             </li>
            </ul>
          </li>
-         <li class="features__item feature-item">
+         <li class="features__item feature-item-white">
            <h3 class="feature-item__title">Там есть мост дьявола</h3>
            <p class="feature-item__number">№ 2</p>
            <p class="feature-item__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -74,13 +74,13 @@
          </li>
        </ul>
      </section>
-
+<!-- Раздел формы -->
      <section class="search-hotel">
-       <h2 class="visual-hidden">Поиск гостиницы</h2>
-       <p class="search-hotel__quetion">Заинтересовались?</p>
-       <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-       <button class="search-hotel__popup-form-button search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
-       <form class="search-hotel__popup-form" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="visual-hidden">Поиск гостиницы</h2>
+      <p class="search-hotel__quetion">Заинтересовались?</p>
+      <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button class="search-button search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
+      <form class="search-hotel__popup-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="search-hotel__popup-form-field" for="arrival-date">
           <span class="search-hotel__popup-form-field-name">Дата заезда:</span>
           <input class="search-hotel-input" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
@@ -97,10 +97,8 @@
           <span class="search-hotel__popup-form-field-name">Дети:</span>
           <input class="search-hotel-input" type="text" name="children" value="" placeholder="0">
         </label>
-        <button class="search-hotel__popup-form-button search-hotel__popup-form-button-search" type="submit">Найти</button>
+        <button class="search-button search-button-search" type="submit">Найти</button>
       </form>
-
-       </form>
      </section>
 
      <section class="map">
