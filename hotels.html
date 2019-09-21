@@ -9,78 +9,78 @@
   </head>
 
   <body>
-   <header class="header">
-    <nav class="navigation">
-     <a class="header__logo" href="index.html">
-      <img class="navigation__logo-image" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
-     </a>
-     <ul class="navigation__list">
-      <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
-      <li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
-      <li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>
-      <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#">Гостиницы</a></li>
-      </ul>
-    </nav>
-   </header>
+    <header class="header">
+      <nav class="navigation">
+        <a class="header__logo" href="index.html">
+          <img class="navigation__logo-image" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
+        </a>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-   <main class="result">
+    <main class="result">
     <h1 class="visual-hidden">Результат поиска</h1>
      <!-- Здесь будет форма для поиска гостиниц -->
 
-     <section class="filter-hotels">
-      <h2 class="visual-hidden">Фильтр гостиниц</h2>
-      <form class="filter-hotels__form">
-        <fieldset class="filter-hotels__fieldset-housing">
-          <legend class="filter-hotels__legend-infrastructure">Инфраструктура:</legend>
-          <ul class="filter-hotels__list">
-            <li class="filter-hotels__item">
-              <input class="filter-hotels__item-input" type ="checkbox" name="pool" id="filter-pool" checked>
-              <label class="filter-hotels__item-label" for="filter-pool">Бассейн</label>
-            </li>
-            <li class="filter-hotels__item">
-                <input class="filter-hotels__item-input" type ="checkbox" name="parking" id="filter-parking">
+      <section class="filter-hotels">
+        <h2 class="visual-hidden">Фильтр гостиниц</h2>
+        <form class="filter-hotels__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-hotels__fieldset-infrastructure">
+            <legend class="filter-hotels__legend-infrastructure">Инфраструктура:</legend>
+            <ul class="filter-hotels__list">
+              <li class="filter-hotels__item">
+                <input class="filter-hotels__item-input" type="checkbox" name="pool" id="filter-pool" checked>
+                <label class="filter-hotels__item-label" for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-hotels__item">
+                <input class="filter-hotels__item-input" type="checkbox" name="parking" id="filter-parking">
                 <label class="filter-hotels__item-label" for="filter-parking">Парковка</label>
-            </li>
-            <li class="filter-hotels__item">
-                <input class="filter-hotels__item-input" type ="checkbox" name="wifi" id="filter-wifi">
+              </li>
+              <li class="filter-hotels__item">
+                <input class="filter-hotels__item-input" type="checkbox" name="wifi" id="filter-wifi">
                 <label class="filter-hotels__item-label" for="filter-wifi">Wi-Fi</label>
-            </li>
-          </ul>
-          <legend class="filter-hotels__legend-type">Тип жилья:</legend>
-          <ul class="filter-hotels__list">
-            <li class="filter-hotels__item">
-              <input class="filter-hotels__item-input" type ="checkbox" name="hotel" id="filter-hotel" checked>
-              <label class="filter-hotels__item-label" for="filter-hotel">Гостиница</label>
-            </li>
-            <li class="filter-hotels__item">
-                <input class="filter-hotels__item-input" type ="checkbox" name="motel" id="filter-motel" checked>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-hotels__fieldset-type">
+            <legend class="filter-hotels__legend-type">Тип жилья:</legend>
+            <ul class="filter-hotels__list">
+              <li class="filter-hotels__item">
+                <input class="filter-hotels__item-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label class="filter-hotels__item-label" for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-hotels__item">
+                <input class="filter-hotels__item-input" type="checkbox" name="motel" id="filter-motel" checked>
                 <label class="filter-hotels__item-label" for="filter-motel">Мотель</label>
-            </li>
-            <li class="filter-hotels__item">
-                <input class="filter-hotels__item-input" type ="checkbox" name="apartment" id="filter-apartment" checked>
+              </li>
+              <li class="filter-hotels__item">
+                <input class="filter-hotels__item-input" type="checkbox" name="apartment" id="filter-apartment" checked>
                 <label class="filter-hotels__item-label" for="filter-apartment">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-hotels__fieldset-price">
-          <legend class="filter-hotels__legend-price">Стоимость в сутки (р):</legend>
-          <div class="filter-hotels__range-filter">
-            <div class="filter-hotels__range-line filter-hotels__range-line--white"></div>
-            <div class="filter-hotels__range-line filter-hotels__range-line--transperent"></div>
-            <div class="filter-hotels__point point-min"></div>
-            <div class="filter-hotels__point point-max"></div>
-            <div class="filter-hotels__range-control">
-            <label class="filter-hotels__label-from">От
-              <input class="filter-hotels__price-value" type="text" name="price-min" placeholder="0">
-            </label>
-            <label class="filter-hotels__label-to">До
-              <input class="filter-hotels__price-value" type="text" name="price-max" placeholder="3 000">
-            </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-hotels__fieldset-price">
+            <legend class="filter-hotels__legend-price">Стоимость в сутки (р):</legend>
+            <div class="filter-hotels__range-filter">
+              <div class="filter-hotels__range-line filter-hotels__range-line--white"></div> <!--линия диапазона светлая-->
+              <div class="filter-hotels__range-line filter-hotels__range-line--transperent"></div> <!--линия диапазона полупрозрачная-->
+              <div class="filter-hotels__point point-min"></div> <!--ползунок минимального значения-->
+              <div class="filter-hotels__point point-max"></div> <!--ползунок максимального значения-->
+              <label class="filter-hotels__label-from">От
+                <input class="filter-hotels__price-value" type="text" name="price-min" placeholder="0">
+              </label>
+              <label class="filter-hotels__label-to">До
+                <input class="filter-hotels__price-value" type="text" name="price-max" placeholder="3 000">
+              </label>
             </div>
-          </div>
-          <button class="filter-hotels__button-show" type="submit">Показать</button>
-        </fieldset>
-      </form>
+            <button class="filter-hotels__button-show" type="submit">Показать</button>
+          </fieldset>
+        </form>
      </section>
 
 
@@ -91,13 +91,13 @@
      <h2 class="sorting__title">Сортировка:</h2>
      <ul class="sorting__list">
         <li class="sorting__item">
-            <a class="sorting__link sorting__link--current" href="#">По цене</a>
+          <a class="sorting__link sorting__link--current" href="#">По цене</a>
         </li>
         <li class="sorting__item">
-            <a class="sorting__link" href="#">По типу</a>
+          <a class="sorting__link" href="#">По типу</a>
         </li>
         <li class="sorting__item">
-            <a class="sorting__link" href="#">По рейтингу</a>
+          <a class="sorting__link" href="#">По рейтингу</a>
         </li>
      </ul>
      <ul class="sorting__direction-list">
@@ -154,20 +154,20 @@
    </main>
 
    <footer class="footer">
-     <p class="footer__hushtag">#Visitsedona</p>
-     <ul class="footer__list">
-       <li class="footer__item">
-         <a class="footer__link" href="#">Твиттер</a>
-       </li>
-       <li class="footer__item">
-         <a class="footer__link" href="#">Фейсбук</a>
-       </li>
-       <li class="footer__item">
-         <a class="footer__link" href="#">Ютуб</a>
-       </li>
-     </ul>
-     <p class="footer__made">Website by</p>
-     <a class="footer__made-link" href="https://htmlacademy.ru">
+    <p class="footer__hushtag">#Visitsedona</p>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">Твиттер</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Фейсбук</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Ютуб</a>
+      </li>
+    </ul>
+    <p class="footer__made">Website by</p>
+    <a class="footer__made-link" href="https://htmlacademy.ru">
       <img class="footer__made-image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
     </a>
    </footer>
