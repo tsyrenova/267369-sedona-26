@@ -170,16 +170,16 @@ a {
   background-color: #ffffff;
 }
 
-.search-button-search {
+.search-button__search {
   background-color: #81b3d2;
 }
 
-.search-button-search:hover,
-.search-button-search:focus {
+.search-button__search:hover,
+.search-button__search:focus {
   background-color: #669ec0;
 }
 
-.search-button-search:active {
+.search-button__search:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
