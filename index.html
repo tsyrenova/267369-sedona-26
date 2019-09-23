@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Сайт города Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Сайт города Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
     <header class="header">
       <nav class="navigation">
-      <img class="navigation__logo-image" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="hotels.html">Гостиницы</a></li>
+        <img class="navigation__logo-image" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-   </header>
+    </header>
 
-<!-- Главное содержимое страницы -->
+    <!-- Главное содержимое страницы -->
     <main class="main">
-      <h1 class="main__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <img class="welcome-baner-image" src="img/mountain.png" width="1200" height="800" alt="гора">
-      <img class="welcome-baner-text" src="img/intro-welcome.svg" width="459" height="353" alt="добро пожаловать">
-      <div class="welcome-baner-border"></div>
+      <h1 class="visual-hidden">Сай Седоны</h1>
+      <div class="main-sedona">
+        <img class="welcome-baner-image" src="img/mountain.png" width="1200" height="800" alt="гора">
+        <img class="welcome-baner-text" src="img/intro-welcome.svg" width="459" height="353" alt="добро пожаловать">
+        <div class="welcome-baner-border"></div>
+      </div>
 
-<!-- Разделы главного содержимого -->
+      <!-- Разделы главного содержимого -->
       <section class="features">
         <h2 class="visual-hidden">Преимущества</h2>
-        <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        <div class="features-wrapper">
+          <p class="features__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        </div>
         <ul class="features__list">
-          <li class="features__item features__item--white">
-            <h3 class="features__item-title">Настоящий городок</h3>
-            <p class="features__item-number">№ 1</p>
-            <p class="features__item-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <ul class="features-services">
+          <li class="features__item">
+            <div class="features__wrapper">
+              <h3 class="features__item-title features__item-title--white">Настоящий городок</h3>
+              <p class="features__item-number features__item-number--white">№ 1</p>
+              <p class="features__item-text features__item-text--white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+              <ul class="features-services">
               <li class="features-services__item">
-              <h4 class="features-services__title">Жильё</h4>
-              <p class="features-services__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <h4 class="features-services__title">Жильё</h4>
+                <p class="features-services__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="features-services__item">
-              <h4 class="features-services__title">Еда</h4>
-              <p class="features-services__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <h4 class="features-services__title">Еда</h4>
+                <p class="features-services__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="features-services__item">
-              <h4 class="features-services__title">Сувениры</h4>
-              <p class="features-services__text">Не только китайского, но и местного производства</p>
+                <h4 class="features-services__title">Сувениры</h4>
+                <p class="features-services__text">Не только китайского, но и местного производства</p>
               </li>
             </ul>
           </li>
-          <li class="features__item features__item-white">
-            <h3 class="features__item-title">Там есть мост дьявола</h3>
-            <p class="features__item-number">№ 2</p>
-            <p class="features__item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <li class="features__item">
+            <div class="features__wrapper">
+              <h3 class="features__item-title features__item-title--white">Там есть мост дьявола</h3>
+              <p class="features__item-number features__item-number--white">№ 2</p>
+              <p class="features__item-text features__item-text--white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
           <li class="features__item feature-item">
             <h3 class="features__item-title">Небольшая площадь</h3>
@@ -74,37 +85,42 @@
           </li>
         </ul>
       </section>
-<!-- Раздел формы -->
+      <!-- Раздел формы -->
       <section class="search-hotel">
-        <h2 class="visual-hidden">Поиск гостиницы</h2>
-        <p class="search-hotel__quetion">Заинтересовались?</p>
-        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="search-button search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
-        <form class="search-hotel__popup-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="search-hotel__popup-form-field" for="arrival-date">
-            <span class="search-hotel__popup-form-field-name">Дата заезда:</span>
-            <input class="search-hotel-input" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-          </label>
-          <label class="search-hotel__popup-form-field" for="departure-date">
-            <span class="search-hotel__popup-form-field-name">Дата выезда:</span>
-            <input class="search-hotel-input" type="text" name="departure-date" value="" placeholder="4 июля 2017">
-          </label>
-          <label class="search-hotel__popup-form-field" for="adults">
-            <span class="search-hotel__popup-form-field-name">Взрослые:</span>
-            <input class="search-hotel-input" type="text" name="adults" value="" placeholder="2">
-          </label>
-          <label class="search-hotel__popup-form-field" for="children">
-            <span class="search-hotel__popup-form-field-name">Дети:</span>
-            <input class="search-hotel-input" type="text" name="children" value="" placeholder="0">
-          </label>
-          <button class="search-button search-button__search" type="submit">Найти</button>
-        </form>
+        <div class="search-hotel__wrapper--text">
+          <h2 class="visual-hidden">Поиск гостиницы</h2>
+          <p class="search-hotel__quetion">Заинтересовались?</p>
+          <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+            в Седоне</p>
+        </div>
+        <div class="search-hotel__wrapper--form">
+          <button class="search-button search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
+          <form class="search-hotel__popup-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="search-hotel__popup-form-field" for="arrival-date">
+              <span class="search-hotel__popup-form-field-name">Дата заезда:</span>
+              <input class="search-hotel-input" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+            </label>
+            <label class="search-hotel__popup-form-field" for="departure-date">
+              <span class="search-hotel__popup-form-field-name">Дата выезда:</span>
+              <input class="search-hotel-input" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+            </label>
+            <label class="search-hotel__popup-form-field" for="adults">
+              <span class="search-hotel__popup-form-field-name">Взрослые:</span>
+              <input class="search-hotel-input" type="text" name="adults" value="" placeholder="2">
+            </label>
+            <label class="search-hotel__popup-form-field" for="children">
+              <span class="search-hotel__popup-form-field-name">Дети:</span>
+              <input class="search-hotel-input" type="text" name="children" value="" placeholder="0">
+            </label>
+            <button class="search-button search-button__search" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
 
       <section class="map">
         <h2 class="visual-hidden">Карта</h2>
         <a class="map__link" href="map.html">
-          <img class="map__image"src="img/map.jpg" width="1200" height="593" alt="как проехать">
+          <img class="map__image" src="img/map.jpg" width="1200" height="593" alt="как проехать">
         </a>
       </section>
     </main>
@@ -123,11 +139,14 @@
           <a class="footer__link" href="#">Ютуб</a>
         </li>
       </ul>
-      <p class="footer__made">Website by</p>
-      <a class="footer__made-link" href="https://htmlacademy.ru">
-        <img class="footer__made-image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
-      </a>
+      <div class="footer__wrapper-made">
+        <p class="footer__made">Website by</p>
+        <a class="footer__made-link" href="https://htmlacademy.ru">
+          <img class="footer__made-image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+        </a>
+      </div>
     </footer>
+  </div>
+</body>
 
-  </body>
 </html>
