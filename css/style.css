@@ -183,7 +183,7 @@ a {
     flex-basis: 1200px;
     flex-grow: 1;
     margin: 0;
-    margin-bottom: 84px;
+    margin-bottom: 42px;
     padding: 0;
     padding-top: 47px;
     min-height: 100px;
@@ -210,6 +210,7 @@ a {
 
 .features-services {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     padding-top: 56px;
@@ -305,6 +306,7 @@ a {
 .features-services__text {
     width: 285px;
     margin: 0 auto;
+    margin-bottom: 42px;
     text-align: center;
     color: #333333;
 }
